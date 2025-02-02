@@ -1,0 +1,49 @@
+import java.util.*;
+class Quadatic
+{
+	public static void main (String[] args)
+	{
+	Scanner Scanner=new Scanner(System.in);
+	System.out.println("enter a coeff:");
+	Double a=Scanner.nextDouble();
+	System.out.println("enter b coeff:");
+	Double b=Scanner.nextDouble();
+    System.out.println("enter c coeff:");
+    Double c=Scanner.nextDouble();
+    Double D=b*b-4*a*c;
+    System.out.println("discriminate D:"+D);
+    if(D>0)
+    {
+        System.out.println("the quadratic eqn has real and discriminate");
+        double root1=(-b+Math.sqrt(D))/(2*a);
+        double root2=(-b-Math.sqrt(D))/(2*a);
+        System.out.println("root1:"+root1);
+        System.out.println("root2:"+root2);
+    }
+    else if(D==0){
+        System.out.println("the eqn has one real and repeat root:");
+        double root=-b/2*a;
+        System.out.println("root:"+root);
+        }
+        else{
+            System.out.println("the eqn has complex roots");
+            double realpart=-b/2*a;
+            double imaginarypart=Math.sqrt(-D)/2*a;
+            System.out.println("root1:"+realpart+"+"+imaginarypart+"i");
+            System.out.println("root2:"+realpart+"-"+imaginarypart+"i");    
+        }
+	}
+}
+output:
+Sample Input
+2.5
+4.5
+6.6
+Your Output
+enter a coeff:
+enter b coeff:
+enter c coeff:
+discriminate D:-45.75
+the eqn has complex roots
+root1:-5.625+8.454843286542927i
+root2:-5.625-8.454843286542927i
