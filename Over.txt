@@ -1,0 +1,23 @@
+class Overloading{
+int add(int a,int b){
+    return a+b; 
+}    
+float add(float a,float b){
+    return a+b;
+}
+double add(double a,double b){
+    return a+b;
+}
+}
+class Over{
+public static void main(String[]args){
+    Overloading obj=new Overloading();
+    System.out.println("sum of int:"+obj.add(10,30));
+    System.out.println("sum of float:"+obj.add(1.0,30));
+    System.out.println("sum of double:"+obj.add(1.0,30));
+}
+}
+Your Output
+sum of int:40
+sum of float:31.0
+sum of double:31.0
