@@ -1,0 +1,20 @@
+class Vehicle{
+    void displaystart(){
+        System.out.println("start the car");
+    }
+}
+class Car extends Vehicle{
+    void displaydrive(){
+        System.out.println("drive the car");
+    }
+}
+class Single{
+    public static void main(String[]args){
+    Car tesla=new Car();
+    tesla.displaystart();
+    tesla.displaydrive();
+}
+}
+Your Output
+start the car
+drive the car
