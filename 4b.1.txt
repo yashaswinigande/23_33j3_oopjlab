@@ -1,0 +1,27 @@
+class Vehicle{
+    void displaystart(){
+        System.out.println("start the car");
+    }
+}
+class Car extends Vehicle{
+    void displaydrive(){
+        System.out.println("drive the car");
+    }
+}
+class Evcar extends Car{
+    void charge(){
+        System.out.println("charge the car");
+    }
+}
+class Multi{
+    public static void main(String[]args){
+    Evcar tesla=new Evcar();
+    tesla.displaystart();
+    tesla.displaydrive();
+    tesla.charge();
+}
+}
+Your Output
+start the car
+drive the car
+charge the car
