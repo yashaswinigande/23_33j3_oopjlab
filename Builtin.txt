@@ -1,0 +1,44 @@
+import java.util.Scanner;
+class Builtin
+{
+public static void main(String[]args)
+{
+Scanner sc=new Scanner(System.in);
+try
+{
+int a=16/0;
+System.out.println("a"+a);
+}
+catch(ArithmeticException e)
+{
+System.out.println("arithmeticexception:"+e.getMessage());
+}
+try
+{
+int[]number={10,20,30};
+System.out.println("enter index to access");
+int index=sc.nextInt();
+System.out.println("array:"+number[index]);
+}
+catch(ArrayIndexOutOfBoundsException e)
+{
+System.out.println("error:invalid array index accessed");
+System.out.println("exception:"+e.getMessage());
+}
+try
+{
+String a=null;
+System.out.println(a.length());
+}
+catch(NullPointerException e)
+{
+System.out.println("exception:"+e.getMessage());
+}
+}
+}
+output
+arithmeticexception:/ by zero
+enter index to access
+error:invalid array index accessed
+exception:Index 16 out of bounds for length 3
+exception:Cannot invoke "String.length()" because "<local2>" is null

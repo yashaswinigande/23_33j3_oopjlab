@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Multiplecatch
+{
+public static void main(String[]args)
+{
+Scanner sc=new Scanner(System.in);
+try
+{
+System.out.println("enter numerator");
+int numerator=sc.nextInt();
+System.out.println("enter denominator");
+int denominator=sc.nextInt();
+int result=numerator/denominator;
+int[]number={10,20,30};
+System.out.println("enter index to access");
+int index=sc.nextInt();
+System.out.println("array:"+number[index]);
+}
+catch(ArithmeticException e)
+{
+System.out.println("arithmeticexception:"+e.getMessage());
+}
+catch(ArrayIndexOutOfBoundsException e)
+{
+System.out.println("error:invalid array index accessed");
+System.out.println("exception:"+e.getMessage());
+}
+}
+}
+output
+enter numerator 16
+enter denominator 0
+arithmeticexception:/ by zero
