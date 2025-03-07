@@ -1,0 +1,36 @@
+class Students
+{
+void displaydetails(){
+}
+}
+class Student1 extends Students
+{
+void displaydetails()
+{
+System.out.println("name:yashu");
+System.out.println("rollno.: 234g1a33j3");
+}
+}
+class Student2 extends Students
+{
+void displaydetails()
+{
+System.out.println("name:vyshu");
+System.out.println("rollno.: 1911");
+}
+}
+public class Details
+{
+public static void main(String[]args)
+{
+Student1 obj1=new Student1();
+obj1.displaydetails();
+Student2 obj2=new Student2();
+obj2.displaydetails();
+}
+}
+output
+name:yashu
+rollno.: 234g1a33j3
+name:vyshu
+rollno.: 1911
